@@ -1,0 +1,17 @@
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.csproj.AssemblyReference.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.GeneratedMSBuildEditorConfig.editorconfig
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.AssemblyInfoInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.AssemblyInfo.cs
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.csproj.CoreCompileInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\HttpClientJSON.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\HttpClientJSON.deps.json
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\HttpClientJSON.runtimeconfig.json
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\HttpClientJSON.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\HttpClientJSON.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.csproj.CopyComplete
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\refint\HttpClientJSON.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\HttpClientJSON.genruntimeconfig.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\API\HttpClientJSON\HttpClientJSON\obj\Debug\net6.0\ref\HttpClientJSON.dll

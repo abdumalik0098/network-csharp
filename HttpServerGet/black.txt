@@ -1,0 +1,243 @@
+﻿using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
+// server
+IPAddress localaddress = IPAddress.Loopback;
+IPEndPoint endpoint = new IPEndPoint(localaddress, 8080);
+Console.WriteLine(string.Format($"Listening {localaddress}:{8080}"));
+Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(endpoint);
+socket.Listen(10);
+Console.WriteLine("Сервер запущен. Ожидание подключений...\r\n");
+
+
+// Listing
+while (true)
+{
+    Socket client = socket.Accept();
+
+    string statusLine = "HTTP/1.1 200 OK\r\n";
+
+    string responseHeader = "Content-Type: text/html\r\n";
+
+    client.Send(Encoding.UTF8.GetBytes(statusLine));
+
+    client.Send(Encoding.UTF8.GetBytes(responseHeader));
+    //client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+
+        //получаем сообщение
+        StringBuilder builder = new StringBuilder();
+        int bytes = 0; // количество полученных байтов
+        byte[] data = new byte[1024]; // буфер для получаемых данных
+
+        do
+        {
+            bytes = client.Receive(data);
+            builder.Append(Encoding.UTF8.GetString(data, 0, bytes));
+
+        }
+        while (client.Available > 0);
+
+        string getreq = builder.ToString();
+        //string[] get = getreq.Split('\n');
+        int index = getreq.IndexOf("/");
+        var req = getreq.Substring(index + 1).Split(' ')[0];
+
+        Console.WriteLine("Запрос: " + req);
+
+        string path = Directory.GetCurrentDirectory() + "\\src\\";
+
+        await Resp(req, path, client);
+
+        // закрываем сокет
+        //client.Shutdown(SocketShutdown.Both);
+        client.Close();
+        Console.WriteLine("Closed");
+   
+
+
+    /*
+    if (req == String.Empty || req == "favicon.ico")
+    {
+        await IndexAsync(path, client);
+    }
+    else
+    {
+        await Resp(req, path, client);
+    }*/
+
+}
+
+static async Task IndexAsync(string path, Socket client)
+{
+    string responseHeader = "Content-Type: text/html\r\n";
+
+    client.Send(Encoding.UTF8.GetBytes(responseHeader));
+    client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+    path += "index.html";
+
+    using (FileStream fs = File.OpenRead(path))
+    {
+        // выделяем массив для считывания данных из файла
+        byte[] buffer = new byte[1024];
+        // считываем данные
+        await fs.ReadAsync(buffer, 0, buffer.Length);
+        var data = Encoding.UTF8.GetString(buffer);
+        client.Send(Encoding.UTF8.GetBytes(data));
+    }
+}
+
+static async Task Resp(string req, string path, Socket client)
+{
+    string responseHeader = "Content-Type: text/html\r\n";
+
+    client.Send(Encoding.UTF8.GetBytes(responseHeader));
+    client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+    if (req == String.Empty)
+    {
+        path += "index.html";
+        using (FileStream fs = File.OpenRead(path))
+        {
+            // выделяем массив для считывания данных из файла
+            byte[] buffer = new byte[1024];
+            // считываем данные
+            await fs.ReadAsync(buffer, 0, buffer.Length);
+            var data = Encoding.UTF8.GetString(buffer);
+            client.Send(Encoding.UTF8.GetBytes(data));
+        }
+    }
+    else
+    {
+        path += req;
+        using (FileStream fs = File.OpenRead(path))
+        {
+            // выделяем массив для считывания данных из файла
+            byte[] buffer = new byte[1024];
+            // считываем данные
+            await fs.ReadAsync(buffer, 0, buffer.Length);
+            var data = Encoding.UTF8.GetString(buffer);
+            client.Send(Encoding.UTF8.GetBytes(data));
+        }
+    }
+}
+
+static async Task Image(string req, string path, Socket client)
+{
+
+    string responseHeader = "Content-Type: text/html\r\n";
+
+    client.Send(Encoding.UTF8.GetBytes(responseHeader));
+    client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+    path += req;
+
+    using (FileStream fs = File.OpenRead(path))
+    {
+        // выделяем массив для считывания данных из файла
+        byte[] buffer = new byte[1024];
+        // считываем данные
+        await fs.ReadAsync(buffer, 0, buffer.Length);
+        //var data = Encoding.Default.GetString(buffer);
+        //client.Send(Encoding.UTF8.GetBytes("Content-Length: " + buffer.Length));
+        //client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+        client.Send(buffer);
+    }
+}
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+using System.Text.RegularExpressions;
+
+IPAddress localaddress = IPAddress.Loopback;
+IPEndPoint endpoint = new IPEndPoint(localaddress, 8005);
+Console.WriteLine(string.Format($"Listening port:{8005}"));
+Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+socket.Bind(endpoint);
+socket.Listen(10);
+
+Console.WriteLine("Сервер запущен. Ожидание подключений...\r\n");
+
+while (true)
+{
+    Socket client = socket.Accept();
+    
+    //получаем сообщение
+    StringBuilder builder = new StringBuilder();
+    int bytes = 0; // количество полученных байтов
+    byte[] data = new byte[256]; // буфер для получаемых данных
+
+    do
+    {
+        bytes = client.Receive(data);
+        builder.Append(Encoding.UTF8.GetString(data, 0, bytes));
+    }
+    while (client.Available > 0);
+
+    Console.WriteLine(DateTime.Now.ToShortTimeString() + ": " + builder.ToString());
+
+    if (Regex.IsMatch(builder.ToString(), "^GET"))
+    {
+
+    }
+    else
+    {
+
+    }
+
+    string page = Directory.GetCurrentDirectory() + "\\src\\index.html";
+
+    /* if (builder.ToString() == "/")
+         page += "index.html";*/
+
+    string statusLine = "HTTP/1.1 200 OK\r\n";
+    string responseHeader = "Content-Type: text/html\r\n";
+
+    client.Send(Encoding.UTF8.GetBytes(statusLine));
+    client.Send(Encoding.UTF8.GetBytes(responseHeader));
+    client.Send(Encoding.UTF8.GetBytes("\r\n"));
+
+    using (FileStream fs = File.OpenRead(page))
+    {
+        // выделяем массив для считывания данных из файла
+        byte[] buffer = new byte[1024];
+        // считываем данные
+        await fs.ReadAsync(buffer, 0, buffer.Length);
+        //string msg = fs.Read();
+       // byte[] buffer = Encoding.UTF8.GetBytes(msg);
+        string textFromFile = Encoding.UTF8.GetString(buffer);
+
+        //client.Send(textFromFile);
+
+        //client.Send(Encoding.UTF8.GetBytes(textFromFile));
+        // response.ContentLength64 = buffer.Length;
+        //Stream st = client..OutputStream;
+        //st.Write(buffer, 0, buffer.Length);
+        
+        client.Send(Encoding.UTF8.GetBytes(textFromFile));
+    }
+
+    
+    //string msg = tr.ReadToEnd();
+
+    // context.Response.Close();
+    // закрываем сокет
+    //client.Shutdown(SocketShutdown.Both);*/
+    
+    client.Close();
+    Console.WriteLine("Closed");
+}
+

@@ -1,0 +1,8 @@
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\bin\Debug\HttpServerTxtImage.exe.config
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\bin\Debug\HttpServerTxtImage.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\bin\Debug\HttpServerTxtImage.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\obj\Debug\HttpServerTxtImage.csproj.AssemblyReference.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\obj\Debug\HttpServerTxtImage.csproj.SuggestedBindingRedirects.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\obj\Debug\HttpServerTxtImage.csproj.CoreCompileInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\obj\Debug\HttpServerTxtImage.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerTxtImage\obj\Debug\HttpServerTxtImage.pdb

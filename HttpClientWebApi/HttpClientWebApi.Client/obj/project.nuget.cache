@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "kGRPk/+BLLcF3ciS0kfWPto/Fuglr06bNRap233KU+LSuvLeAYYHKwrFxPtGv5shh1sR0BC7AvWpyHTOL4Un5A==",
+  "success": true,
+  "projectFilePath": "D:\\_WorkPlace\\#1 Разработка\\_CSHARP\\API\\HttpClientWebApi\\HttpClientWebApi.Client\\HttpClientWebApi.Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fisabeel\\.nuget\\packages\\system.net.http.json\\7.0.0\\system.net.http.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Fisabeel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Fisabeel\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Fisabeel\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

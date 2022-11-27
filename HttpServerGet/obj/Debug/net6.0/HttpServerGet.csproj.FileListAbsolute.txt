@@ -1,0 +1,15 @@
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\bin\Debug\net6.0\HttpServerGet.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\bin\Debug\net6.0\HttpServerGet.deps.json
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\bin\Debug\net6.0\HttpServerGet.runtimeconfig.json
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\bin\Debug\net6.0\HttpServerGet.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\bin\Debug\net6.0\HttpServerGet.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.csproj.AssemblyReference.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.GeneratedMSBuildEditorConfig.editorconfig
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.AssemblyInfoInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.AssemblyInfo.cs
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.csproj.CoreCompileInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\refint\HttpServerGet.dll
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\HttpServerGet.genruntimeconfig.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HttpServerGet\obj\Debug\net6.0\ref\HttpServerGet.dll

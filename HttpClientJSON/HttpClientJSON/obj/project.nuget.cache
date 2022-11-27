@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "L3egGFWYqbiCZSpWp3oD+KJZ4GRYFqtlr0mvsce5HpU8/s/eBghbBjicgGHrKohRAi3AJmEb9lG/nb+RIAXFmA==",
+  "success": true,
+  "projectFilePath": "D:\\_WorkPlace\\#1 Разработка\\_CSHARP\\API\\HttpClientJSON\\HttpClientJSON\\HttpClientJSON.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fisabeel\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

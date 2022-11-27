@@ -1,0 +1,8 @@
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\bin\Debug\HtttpListener.exe.config
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\bin\Debug\HtttpListener.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\bin\Debug\HtttpListener.pdb
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\obj\Debug\HtttpListener.csproj.AssemblyReference.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\obj\Debug\HtttpListener.csproj.SuggestedBindingRedirects.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\obj\Debug\HtttpListener.csproj.CoreCompileInputs.cache
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\obj\Debug\HtttpListener.exe
+D:\_WorkPlace\#1 Разработка\_CSHARP\ProgTegnology\FourthLabHTTP\HtttpListener\obj\Debug\HtttpListener.pdb
